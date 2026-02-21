@@ -48,7 +48,7 @@ iter_*/agent_actions.csv: Details the lower-level game dynamics. It includes eac
 
 iter_*/market_summary.csv: Provides a snapshot of the market after each iteration, including social welfare, supply-demand balance ratios, and the quantified "Reality Gap" the system experiences.
 
-### ⚙️ Usage
+## ⚙️ Usage
 This dataset can be utilized to:
 
 Reproduce the convergence trajectory of the proposed bi-level regulatory algorithm when confronted with human bounded rationality.
@@ -57,7 +57,7 @@ Analyze the bargaining dynamics and strategic evolution of LLM-driven agents wit
 
 Serve as a benchmark for reinforcement learning or behavioral economics studies focused on microgrid and energy community market design.
 
-### 💡 Citation
+## 💡 Citation
 If you utilize this dataset in your research, please consider citing our manuscript:
 
 J. Huang, T. Yu, Z. Pan, and Y. Wu, "A Behavioral-Strategic Market Mechanism for Energy Sharing: Integrating LLM-Driven Bounded Rationality with Regulatory Optimization," IEEE Transactions on Smart Grid (Under Review), 2026.
