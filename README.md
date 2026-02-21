@@ -21,6 +21,7 @@ This dataset provides the full simulation logs and agent configurations used to 
     ┣ 📂 iter_1
     ┣ ...
     ┗ 📂 iter_24                   # Data for the final convergence iteration (Iter 25)
+```
 
 📄 Data Description
 1. configs_semiREALITY.json
