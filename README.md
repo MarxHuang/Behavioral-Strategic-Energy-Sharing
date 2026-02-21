@@ -23,8 +23,8 @@ This dataset provides the full simulation logs and agent configurations used to 
     ┗ 📂 iter_24                   # Data for the final convergence iteration (Iter 25)
 ```
 
-📄 Data Description
-1. configs_semiREALITY.json
+## 📄 Data Description
+### 1. configs_semiREALITY.json
 This file defines the initial personas and behavioral parameters for the Neuro-Symbolic Agents participating in the local energy market.
 
 agent_id: Unique identifier for each prosumer (e.g., PR_01, PR_24).
@@ -39,7 +39,7 @@ rigidity: The strategy rigidity coefficient, reflecting the agent's sensitivity 
 
 reasoning_trace: The baseline logical reasoning prompt provided to the LLM.
 
-2. exp_20251226_150854_FULL/
+### 2. exp_20251226_150854_FULL/
 This directory contains the step-by-step trajectory data across 25 iterations of the bi-level game:
 
 optimizer_summary.json: Logs the upper-level optimizer's objective function values, market stability metrics, and the generated regulatory pricing signals over the convergence process.
@@ -48,7 +48,7 @@ iter_*/agent_actions.csv: Details the lower-level game dynamics. It includes eac
 
 iter_*/market_summary.csv: Provides a snapshot of the market after each iteration, including social welfare, supply-demand balance ratios, and the quantified "Reality Gap" the system experiences.
 
-⚙️ Usage
+### ⚙️ Usage
 This dataset can be utilized to:
 
 Reproduce the convergence trajectory of the proposed bi-level regulatory algorithm when confronted with human bounded rationality.
@@ -57,12 +57,12 @@ Analyze the bargaining dynamics and strategic evolution of LLM-driven agents wit
 
 Serve as a benchmark for reinforcement learning or behavioral economics studies focused on microgrid and energy community market design.
 
-💡 Citation
+### 💡 Citation
 If you utilize this dataset in your research, please consider citing our manuscript:
 
 J. Huang, T. Yu, Z. Pan, and Y. Wu, "A Behavioral-Strategic Market Mechanism for Energy Sharing: Integrating LLM-Driven Bounded Rationality with Regulatory Optimization," IEEE Transactions on Smart Grid (Under Review), 2026.
 
 (The citation format will be updated upon the formal acceptance of the paper.)
 
-🏛️ Acknowledgments
+### 🏛️ Acknowledgments
 This research is supported by the National Natural Science Foundation of China (Grant Nos. 52207105, U24B6010) and the Guangdong Basic and Applied Basic Research Foundation (Grant No. 2025A1515010118).
