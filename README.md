@@ -64,5 +64,5 @@ J. Huang, T. Yu, Z. Pan, and Y. Wu, "A Behavioral-Strategic Market Mechanism for
 
 (The citation format will be updated upon the formal acceptance of the paper.)
 
-### 🏛️ Acknowledgments
+## 🏛️ Acknowledgments
 This research is supported by the National Natural Science Foundation of China (Grant Nos. 52207105, U24B6010) and the Guangdong Basic and Applied Basic Research Foundation (Grant No. 2025A1515010118).
