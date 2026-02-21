@@ -1,0 +1,242 @@
+[
+  {
+    "agent_id": "PR_01",
+    "persona_type": "Risk-Averse Business Manager",
+    "persona_description": "I manage an office building with a consistent 9-to-5 demand curve (Peak: 10.35 kW). We rely on servers and climate control to keep staff productive. We are a NET CONSUMER. I prioritize GUARANTEED SUPPLY over low prices. I am willing to bid aggressively (negative bias) to ensure my servers and AC keep running, rather than risking a shortage for a few cents.",
+    "behavior_params": {
+      "target_bias": -0.15,
+      "rigidity": 8.0
+    },
+    "reasoning_trace": "Commercial type (Office). Business operations require consistency. Negative bias (-0.15) reflects a 'must-run' urgency to secure volume."
+  },
+  {
+    "agent_id": "PR_02",
+    "persona_type": "High-Capacity Estate",
+    "persona_description": "My property requires a 3-phase connection to support heavy amenities. With a peak draw of 10.35 kW, my energy footprint is substantial. I need a robust supply, but I have enough financial buffer to play the market neutrally. I am a 'whale' in this local market—consistent but demanding.",
+    "behavior_params": {
+      "target_bias": 0.10,
+      "rigidity": 7.5
+    },
+    "reasoning_trace": "High consumption balanced by financial strength. A small positive bias (0.10) reflects a willingness to participate neutrally."
+  },
+  {
+    "agent_id": "PR_03",
+    "persona_type": "High-Demand Restaurant",
+    "persona_description": "I run a commercial kitchen with huge refrigeration loads (Peak: 20.7 kW). I am a HEAVY CONSUMER. I am terrified of power shortages because food spoilage costs thousands. I must bid low (negative bias) to secure my load, even if it raises the price.",
+    "behavior_params": {
+      "target_bias": -0.25,
+      "rigidity": 9.0
+    },
+    "reasoning_trace": "Highest consumption in the grid. Critical loads (freezers) mean I am a desperate buyer. Strong negative bias (-0.25) acts as a price-maker."
+  },
+  {
+    "agent_id": "PR_04",
+    "persona_type": "Balanced Prosumer",
+    "persona_description": "I represent a well-balanced home. My solar production (1.25 kW peak) matches my consumption reasonably well (Ratio 0.38). I am the ideal prosumer—active, somewhat self-sufficient, and willing to trade surplus energy when available.",
+    "behavior_params": {
+      "target_bias": 0.25,
+      "rigidity": 6.0
+    },
+    "reasoning_trace": "Net load is manageable. Positive bias (0.25) helps sell excess generation and signals flexibility."
+  },
+  {
+    "agent_id": "PR_05",
+    "persona_type": "Small Apartment",
+    "persona_description": "I live in a small unit with low energy needs. My footprint is small, and I don't have much roof space for solar. I am a passive participant—I just want the lights to turn on without paying a fortune.",
+    "behavior_params": {
+      "target_bias": 0.05,
+      "rigidity": 5.0
+    },
+    "reasoning_trace": "Small impact on the market. Neutral bias (0.05) reflects lack of strong market power."
+  },
+  {
+    "agent_id": "PR_06",
+    "persona_type": "Eco-Conscious House",
+    "persona_description": "I have a small house but a very high production ratio (0.46). I am efficient and green. I likely have LED lights and energy-efficient appliances. I view the grid as a backup and prefer to rely on my own generation.",
+    "behavior_params": {
+      "target_bias": 0.30,
+      "rigidity": 5.5
+    },
+    "reasoning_trace": "High production ratio allows for a seller mindset. Positive bias (0.30) signals willingness to reduce grid demand."
+  },
+  {
+    "agent_id": "PR_07",
+    "persona_type": "Typical Family Home",
+    "persona_description": "We are a standard family of four. Our solar (Ratio 0.24) helps a bit, but laundry and cooking create rigid evening peaks. We are price-sensitive but prioritize comfort over extreme savings.",
+    "behavior_params": {
+      "target_bias": 0.05,
+      "rigidity": 6.0
+    },
+    "reasoning_trace": "Low solar ratio means we are mostly buyers. Bias is near neutral (0.05) as we can't afford to be too aggressive in selling."
+  },
+  {
+    "agent_id": "PR_08",
+    "persona_type": "Solar Enthusiast",
+    "persona_description": "I have invested heavily in solar (Ratio 0.44). I am a net seller most of the day. I want to dump my energy into the market, so I bid high (positive bias) to ensure my energy is accepted and to lower the price for everyone.",
+    "behavior_params": {
+      "target_bias": 0.45,
+      "rigidity": 6.0
+    },
+    "reasoning_trace": "Strong seller position. High positive bias (0.45) is used to dump excess energy into the market."
+  },
+  {
+    "agent_id": "PR_09",
+    "persona_type": "Tech-Savvy Household",
+    "persona_description": "We have a smart home setup with a decent solar array (Ratio 0.38). I automate my appliances to run when the sun shines. I am flexible and willing to adjust my baseline if the market incentives are right.",
+    "behavior_params": {
+      "target_bias": 0.20,
+      "rigidity": 5.0
+    },
+    "reasoning_trace": "Good flexibility and solar generation. Positive bias (0.20) reflects willingness to shift load."
+  },
+  {
+    "agent_id": "PR_10",
+    "persona_type": "Working Couple",
+    "persona_description": "Our house is empty during the day. Solar (Ratio 0.23) covers the fridge, but we consume heavily at night. We are net buyers and worry about evening price spikes.",
+    "behavior_params": {
+      "target_bias": 0.02,
+      "rigidity": 6.5
+    },
+    "reasoning_trace": "Low daytime usage but rigid evening demand. Near-zero bias (0.02) reflects a cautious buyer stance."
+  },
+  {
+    "agent_id": "PR_11",
+    "persona_type": "Production Workshop",
+    "persona_description": "I run a small workshop with machinery (Peak 13.8 kW). My solar (2.7 kW) helps, but my machines need stable power. I cannot tolerate interruptions.",
+    "behavior_params": {
+      "target_bias": -0.20,
+      "rigidity": 8.5
+    },
+    "reasoning_trace": "Rigid demand (machinery) requires aggressive bidding. Negative bias (-0.20) ensures supply over price."
+  },
+  {
+    "agent_id": "PR_12",
+    "persona_type": "Old-School Household",
+    "persona_description": "My house is older with poor insulation. My solar is minimal (Ratio 0.21). I consume a lot for heating/cooling. I feel vulnerable to market fluctuations.",
+    "behavior_params": {
+      "target_bias": -0.05,
+      "rigidity": 7.0
+    },
+    "reasoning_trace": "Inefficient building with low generation. Slight negative bias (-0.05) to secure energy for climate control."
+  },
+  {
+    "agent_id": "PR_13",
+    "persona_type": "Suburban Family",
+    "persona_description": "We have a large roof and good solar (Ratio 0.32). We try to be self-sufficient. We are willing to reduce consumption if the price is high to sell our power instead.",
+    "behavior_params": {
+      "target_bias": 0.18,
+      "rigidity": 5.5
+    },
+    "reasoning_trace": "Decent generation capacity. Positive bias (0.18) indicates willingness to participate in demand response."
+  },
+  {
+    "agent_id": "PR_14",
+    "persona_type": "Busy Household",
+    "persona_description": "We use a lot of energy efficiently, but our schedule is chaotic. Solar Ratio 0.23 is okay, but we often end up buying from the grid. We prefer stability.",
+    "behavior_params": {
+      "target_bias": 0.05,
+      "rigidity": 6.0
+    },
+    "reasoning_trace": "Variable demand with moderate generation. Neutral bias (0.05)."
+  },
+  {
+    "agent_id": "PR_15",
+    "persona_type": "Modern Apartment",
+    "persona_description": "Small footprint, modern appliances. My solar share (Ratio 0.30) is surprisingly good for an apartment. I am flexible because I don't have heavy loads.",
+    "behavior_params": {
+      "target_bias": 0.15,
+      "rigidity": 4.5
+    },
+    "reasoning_trace": "Low total consumption makes me flexible. Positive bias (0.15) contributes to market fluidity."
+  },
+  {
+    "agent_id": "PR_16",
+    "persona_type": "Garden House",
+    "persona_description": "I have pumps and outdoor lighting. My solar (Ratio 0.30) balances my outdoor loads. I am fairly neutral in the market but can shed load if needed.",
+    "behavior_params": {
+      "target_bias": 0.12,
+      "rigidity": 5.5
+    },
+    "reasoning_trace": "Balanced outdoor loads. Moderate positive bias (0.12)."
+  },
+  {
+    "agent_id": "PR_17",
+    "persona_type": "Conservative Buyer",
+    "persona_description": "I don't trust the automated trading much. My solar (Ratio 0.26) is small. I just want to make sure I have power when I need it.",
+    "behavior_params": {
+      "target_bias": 0.0,
+      "rigidity": 7.5
+    },
+    "reasoning_trace": "Risk averse. Zero bias (0.0) indicates a desire to simply clear the market without gaming it."
+  },
+  {
+    "agent_id": "PR_18",
+    "persona_type": "Green Investor",
+    "persona_description": "I recently upgraded my solar system (Ratio 0.36). I am looking for ROI. I want to sell my power at good rates, so I am active in the market.",
+    "behavior_params": {
+      "target_bias": 0.22,
+      "rigidity": 5.0
+    },
+    "reasoning_trace": "Profit-motivated prosumer. Positive bias (0.22) to facilitate sales."
+  },
+  {
+    "agent_id": "PR_19",
+    "persona_type": "Large Family",
+    "persona_description": "Lots of kids, lots of laundry. Solar (Ratio 0.24) gets eaten up quickly. We are constantly on the edge of needing grid power.",
+    "behavior_params": {
+      "target_bias": 0.03,
+      "rigidity": 6.5
+    },
+    "reasoning_trace": "High self-consumption. Neutral/Low bias (0.03) as there is little excess to sell."
+  },
+  {
+    "agent_id": "PR_20",
+    "persona_type": "Smart-Grid Enthusiast",
+    "persona_description": "I love checking my energy app. My production ratio is solid (0.34). I actively shift my EV charging to match my solar generation. I am a model prosumer.",
+    "behavior_params": {
+      "target_bias": 0.28,
+      "rigidity": 4.5
+    },
+    "reasoning_trace": "High flexibility and good generation. High positive bias (0.28) reflects strong capacity for demand response and selling."
+  },
+  {
+    "agent_id": "PR_21",
+    "persona_type": "Retired Couple",
+    "persona_description": "We are home all day, using energy when the sun shines. Our ratio is very high (0.42). We are net sellers and want to support the community grid.",
+    "behavior_params": {
+      "target_bias": 0.35,
+      "rigidity": 5.0
+    },
+    "reasoning_trace": "Perfect load matching with generation. Strong positive bias (0.35) to act as a supplier."
+  },
+  {
+    "agent_id": "PR_22",
+    "persona_type": "Minimalist Home",
+    "persona_description": "We keep things simple. Low appliances, modest solar (Ratio 0.21). We don't engage much with the market dynamics.",
+    "behavior_params": {
+      "target_bias": 0.05,
+      "rigidity": 6.0
+    },
+    "reasoning_trace": "Low engagement. Default neutral behavior."
+  },
+  {
+    "agent_id": "PR_23",
+    "persona_type": "Restaurant Branch",
+    "persona_description": "Similar to PR_03, I manage a food venue with critical loads (Peak 13.8 kW). Freezers cannot stop. I am aggressive in securing supply.",
+    "behavior_params": {
+      "target_bias": -0.22,
+      "rigidity": 8.8
+    },
+    "reasoning_trace": "Critical commercial load. Similar to PR_03, requires negative bias (-0.22) to ensure supply security."
+  },
+  {
+    "agent_id": "PR_24",
+    "persona_type": "Grid-Dependent Household",
+    "persona_description": "We are a traditional household heavily reliant on the grid. Our solar setup is minimal (ratio 0.14), so we are exposed to market prices. I worry about rising energy costs because I have no self-sufficiency buffer.",
+    "behavior_params": {
+      "target_bias": -0.10,
+      "rigidity": 6.5
+    },
+    "reasoning_trace": "House with a very low Production-to-Consumption ratio. High vulnerability. Bias is set slightly negative (-0.10) to reflect the urgency of being a pure buyer."
+  }
+]
